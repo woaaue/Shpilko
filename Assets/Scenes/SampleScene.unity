@@ -685,7 +685,8 @@ GameObject:
   - component: {fileID: 634007550}
   - component: {fileID: 634007555}
   - component: {fileID: 634007557}
-  - component: {fileID: 634007558}
+  - component: {fileID: 634007559}
+  - component: {fileID: 634007560}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -774,7 +775,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634007548}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8, y: -3.551, z: 0}
+  m_LocalPosition: {x: -1.799, y: -3.492, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -821,7 +822,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _force: 5
   _rigidbody: {fileID: 634007550}
---- !u!114 &634007558
+--- !u!233 &634007559
+HingeJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634007548}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 1213095030}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 1}
+  m_ConnectedAnchor: {x: 0, y: -0.53}
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 10000
+  m_UseLimits: 0
+  m_AngleLimits:
+    m_LowerAngle: 0
+    m_UpperAngle: 359
+--- !u!114 &634007560
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -830,7 +855,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 634007548}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61549d84f2950484e9b9c6cdcc69edd6, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ef3fc46d8ab35e43a559ced0c8704cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &662806902
@@ -1211,7 +1236,6 @@ GameObject:
   - component: {fileID: 1213095030}
   - component: {fileID: 1213095034}
   - component: {fileID: 1213095035}
-  - component: {fileID: 1213095036}
   m_Layer: 0
   m_Name: EndOfTheRope
   m_TagString: Untagged
@@ -1333,31 +1357,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.45845184, y: 1.0659657}
   m_EdgeRadius: 0
---- !u!233 &1213095035
-HingeJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213095027}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 634007550}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0.0000000572378, y: -0.5333333}
-  m_ConnectedAnchor: {x: -0.0035672188, y: 0.96225524}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 0
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
---- !u!114 &1213095036
+--- !u!114 &1213095035
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1366,7 +1366,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1213095027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ef3fc46d8ab35e43a559ced0c8704cd, type: 3}
+  m_Script: {fileID: 11500000, guid: 61549d84f2950484e9b9c6cdcc69edd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1239046996
@@ -1702,7 +1702,6 @@ GameObject:
   - component: {fileID: 1468218539}
   - component: {fileID: 1468218541}
   - component: {fileID: 1468218544}
-  - component: {fileID: 1468218545}
   m_Layer: 0
   m_Name: EndOfTheRope
   m_TagString: Untagged
@@ -1824,31 +1823,7 @@ Transform:
   m_Father: {fileID: 1161132265}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!233 &1468218544
-HingeJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468218538}
-  m_Enabled: 0
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0.00000016994477, y: -0.5333333}
-  m_ConnectedAnchor: {x: 6.0796, y: -0.13433361}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 0
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
---- !u!114 &1468218545
+--- !u!114 &1468218544
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1857,7 +1832,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1468218538}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ef3fc46d8ab35e43a559ced0c8704cd, type: 3}
+  m_Script: {fileID: 11500000, guid: 61549d84f2950484e9b9c6cdcc69edd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1584022536
