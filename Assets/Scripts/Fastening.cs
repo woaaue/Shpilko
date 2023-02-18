@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Fastening : MonoBehaviour
+public sealed class Fastening : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
 
