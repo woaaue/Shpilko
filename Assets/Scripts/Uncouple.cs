@@ -13,6 +13,7 @@ public class Uncouple : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            _hingeJoint.connectedBody = null;
             _hingeJoint.enabled = false;
         }
     }
