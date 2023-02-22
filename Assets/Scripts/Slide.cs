@@ -59,7 +59,7 @@ public class Slide : MonoBehaviour
         else
             _targetVelocity = alongSurface * _speed;
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             _rb2d.isKinematic = false;
             _rb2d.AddForce(Vector3.up * _jumpForce, ForceMode2D.Impulse);
